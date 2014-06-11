@@ -676,7 +676,9 @@ class scssc {
 				$compiledValue);
 			break;
 		case "comment":
-			$out->lines[] = $child[1];
+			// if(!$this->formatter->stripComments){
+				$out->lines[] = $child[1];
+			// }
 			break;
 		case "mixin":
 		case "function":
